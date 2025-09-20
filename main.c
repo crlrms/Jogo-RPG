@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
+#include <time.h>
 
 int rolarDado();
 int refeicaoPrimeiroAndar();
@@ -13,7 +14,9 @@ int passarSereias();
 int descansar();
 int acordarMarcille();
 int interpretarSonho();
-int interpretarSonho2();
+int tratarComOrcs();
+int capturarBarometz();
+int atacarDragao();
 
 void gameOver() { 
     printf("\nGAME OVER\n");
@@ -136,42 +139,68 @@ int main() {
         } else {
             printf("\nVocês encontram um lugar bom para descansar e, depois de comer, se preparam para dormir. Marcille é a primeira a adormecer e você nota que há algo estranho com ela. Senshi e Chilchuck se aproximam e concordam com você: ela está sob o ataque de um pesadelo, criatura semelhante a uma ostra, que se aloca no travesseiro da pessoa e a faz ter maus sonhos alimentando traumas e feridas emocionais. Se não sair desse pesadelo, a pessoa eventualmente morre.\n");
             printf("O único jeito de combater um pesadelo é entrar no sonho da pessoa e a proteger do estresse emocional. Forçar o despertar pode causar danos mentais severos e irreversíveis. Então você você se prepara e entra no sonho de Marcille.\n");
-            printf("Você está em um corretor de biblioteca, cercado por várias estantes de livros. Por onde começa a procurar?\n");
+            printf("Você está em um corredor de biblioteca, rodeado por várias estantes de livros. Por onde começa a procurar?\n");
 
             int escolha9 = acordarMarcille();
 
-            if () {
-                printf("Você vê Falin segurando seu cajado, que emite raios de luz. Depois, luz apaga e um ser disforme lança uma neblina sobre ela, que a deixa enfraquecida e em seguida a criatura a engole. Aparece Marcille, em sua forma de criança, agarra sua mão e o puxa, aterrorizada, para fugir da criatura.\nEla está muito assustada e começa a chorar. Você precisa encontrar um jeito de tranquilizá-la. O que você achou do sonho dela?\n");
+            if (escolha9 == 1) {
+                printf("Você vê Falin segurando seu cajado, que emite raios de luz. Depois, luz apaga e um ser disforme lança uma neblina sobre ela, que a deixa enfraquecida, como que envenenada, e em seguida a criatura a engole. Aparece Marcille, em sua forma de criança, agarra sua mão e o puxa, aterrorizada, para fugir da criatura.\nEla está muito assustada e começa a chorar. Você precisa encontrar um jeito de tranquilizá-la. O que você acha?\n");
 
                 int escolha10 = interpretarSonho();
 
-                if () {
-                    printf("Ela para, olha para você e começa a chorar. Você se pergunta se disse algo errado. De repente, o monstro agarra seu braço, mas você consegue se desvencilhar e diz que está bem, porém ao olhar para sua mão, percebe que algo aconteceu: sua pele envelheceu, sua mão se parece com uma mão idosa.\n");
-                    printf("Chorando, Marcille diz que quando tentou usar magia ela ficou desse jeito. 'Ela?', você pergunta, e Marcille lhe mostra a boneca que trazia consigo: Era Falin. Então será que...?\n");
-
-                    if () {
-                        printf("");
-                    } else {
-                        printf("");
-                    }
-
+                if (escolha10 == 1) {
+                    printf("Ela para e olha para você. De repente, o monstro agarra seu braço, mas você consegue se desvencilhar e diz que está bem, porém ao olhar para sua mão, percebe que algo aconteceu: sua pele está diferente, parece enrugada. É uma mão idosa, e agora você entende: Marcille teme a morte das pessoas que ama por ser uma elfa e ter expectativa de vida maior de que todos.\n'Você consegue derrotá-lo, você é incrível, Marcille. Olhe tudo isso! Nos meus sonhos não tem nada'. Ela parece incerta, mas se concentra.\nSe ao menos eu tivesse um livro tão poderoso dele (do mago louco)\n'Então deseje isso! Deseje com todas suas forças.'\nDe dentro do corpo do monstro, emerge algo, ela pega, e é o livro do mago louco! Antes que a criatura consiga atacar, Marcille pega o livro e desfere uma pancada na cabeça do monstro e ele morre.\nEla não usou o livro do jeito que você imaginava, mas o importante é que o pesadelo chegou ao fim.\nVocês acordam. Senshi e Chilchuck pergunta como vocês estão, contam que tiveram pesadelos, mas você não lembra de nada, e Marcille narra um sonho divertido e engraçado.\n");
                 } else {
-                    printf("Você");
+                    printf("Você lembra de Falin antes de ser pega pelo monstro. Ela não foi envenenada, mas parecia terrivelmente velha, era como se tivesse ficado idosa em um piscar de olhos. Então você compreende: Marcille teme a morte das pessoas que ama por ser uma elfa e ter expectativa de vida maior de que todos.\n'Você consegue derrotá-lo, você é incrível, Marcille. Olhe tudo isso! Nos meus sonhos não tem nada'. Ela parece incerta, mas se concentra.\nSe ao menos eu tivesse um livro tão poderoso dele (do mago louco)\n'Então deseje isso! Deseje com todas suas forças.'\nDe dentro do corpo do monstro, emerge algo, ela pega, e é o livro do mago louco! Antes que a criatura consiga atacar, Marcille pega o livro e desfere uma pancada na cabeça do monstro e ele morre.\nEla não usou o livro do jeito que você imaginava, mas o importante é que o pesadelo chegou ao fim.\nVocês acordam. Senshi e Chilchuck pergunta como vocês estão, contam que tiveram pesadelos, mas você não lembra de nada, e Marcille narra um sonho divertido e engraçado.\n");
                 }
 
             } else {
-                printf("Você vê aquele ser acredita ser o falecido pai de Marcille, um homem alto (Marcille é mestiça de homem alto e mãe elfa) sentado em uma cadeira de balanço. Então, surge uma criatura disforme e lança uma névoa sobre ele, que o deixa enfraquecido e depois a criatura o engole. Aparece Marcille, em sua forma de criança, agarra sua mão e o puxa, aterrorizada, para fugir da criatura.\nEla está muito assustada e começa a chorar. Você precisa encontrar um jeito de tranquilizá-la. O que você achou do sonho dela?\n");
+                printf("Você vê aquele que ser acredita ser o falecido pai de Marcille, um homem alto (Marcille é mestiça, mistura de homem alto e mãe elfa) sentado em uma cadeira de balanço. Então, surge uma criatura disforme e lança uma névoa sobre ele, que o deixa enfraquecido e depois a criatura o engole. Uma versão infantil de Marcille surge ao seu lado. Ela agarra sua mão e o puxa para fugir da criatura.\nEla está muito assustada e começa a chorar. Você precisa encontrar um jeito de tranquilizá-la. O que você acha?\n");
 
-                int escolha10 = interpretarSonho();
+                int escolha11 = interpretarSonho();
 
-                if () {
-
+                if (escolha11 == 1) {
+                    printf("Ela para e olha para você. De repente, o monstro agarra seu braço, mas você consegue se desvencilhar e diz que está bem, porém ao olhar para sua mão, percebe que algo aconteceu: sua pele está diferente, parece enrugada. É uma mão idosa, e agora você entende: Marcille teme a morte das pessoas que ama por ser uma elfa e ter expectativa de vida maior que a de todos.\n'Você consegue derrotá-lo, você é incrível, Marcille. Olhe tudo isso, esses livros! Nos meus sonhos não tem nada'. Ela parece incerta, mas se concentra.\nSe ao menos eu tivesse um livro tão poderoso dele (do mago louco)...\n'Então deseje isso! Deseje com todas suas forças.'\nDe dentro do corpo do monstro, emerge algo, ela pega, e é o livro do mago louco! Antes que a criatura consiga atacar, Marcille pega o livro e desfere uma pancada na cabeça do monstro e ele morre.\nEla não usou o livro do jeito que você imaginava, mas o importante é que o pesadelo chegou ao fim.\nVocês acordam. Senshi e Chilchuck pergunta como vocês se sentem, contam que tiveram pesadelos, mas você não lembra de nada, e Marcille narra um sonho divertido e engraçado.\n");
                 } else {
-
+                    printf("Você lembra do pai de Marcille. Ela disse que ele morreu quando ela era nova. Mas o modo como o tempo passa para os elfos... e na visão era como se o pai tivesse ficado idoso em um piscar de olhos. Então você compreende: Marcille teme a morte das pessoas que ama, por ser uma elfa e ter expectativa de vida maior que a de todos.\n'Você consegue derrotá-lo, você é incrível, Marcille. Olhe tudo isso, esses livros! Nos meus sonhos não tem nada'. Ela parece incerta, mas se concentra.\nSe ao menos eu tivesse um livro tão poderoso dele (do mago louco)\n'Então deseje isso! Deseje com todas suas forças.'\nDe dentro do corpo do monstro, emerge algo, ela pega, e é o livro do mago louco! Antes que a criatura consiga atacar, Marcille pega o livro e desfere uma pancada na cabeça do monstro e ele morre.\nEla não usou o livro do jeito que você imaginava, mas o importante é que o pesadelo chegou ao fim.\nVocês acordam. Senshi e Chilchuck pergunta como vocês se sentem, contam que tiveram pesadelos, mas você não lembra de nada, e Marcille narra um sonho divertido e engraçado.\n");
                 }
-
             }
         }
+        printf("\nVocês descem mais e mais na masmorra. Senshi diz que tem conhecidos naquela área e pode trocar mantimentos com eles. Vocês seguem adiante e algumas silhuetas enormes surgem bloqueando o caminho. São orcs! Eles exigem que vocês se rendam.\n'Desculpa, Senshi, são tempos difíceis'\n. 'Então esses eram seus amigos, Senshi?' E agora?\n");
+
+        int escolha12 = tratarComOrcs();
+
+        if (escolha12 == 1) {
+            printf("\nSeu grupo é dominado pelos orcs. Eles pegam toda a comida de vocês. O líder deles, irritado, dispara contra você: 'Tudo o que passamos com aquele dragão, ainda temos que lidar com esses aventureiros idiotas'.\nÀ menção do dragão, você rapimente pergunta por mais detalhes e, depois de você expressar sua intenção de matar o dragão, ele lhe fala sobre os últimos locais de avistamento do dragão e libera seu grupo para seguir viagem. Sem comida, terão que caçar mais um monstro.\n");
+
+            int escolha13 = capturarBarometz();
+
+            if (escolha13 == 1) {
+                printf("capturar facilmente\n");
+            } else {
+                printf("com trabalho\n");
+            }
+
+        } else {
+            printf("O líder deles diz que não é da sua conta, então você fala sobre o resgate de sua irmã Falin, que foi engolida pelo dragão vermelho. O orc vacila um pouco, e por fim diz que estão migrando por causa dos ataques do dragão vermelho.\nDepois de você expressar sua intenção de matar o dragão, ele lhe fala sobre os últimos locais de avistamento do dragão e entrega um pouco de comida para a viagem de vocês.\n");
+        }
+
+    printf("\nSeu grupo chega ao lugar indicado e é possível ver os sinais da passagem do dragão por ali. Vocês fazem ppanos sobre como derrotá-lo e decidem que Chilchuck e Senshi o atrairão para um lugar onde Marcille consiga imobilizá-lo para que você o golpeie.\nO dragão vermelho aparece e o grupo começa a agir, porém ao se deslocar para seu lugar designado, você vê uma grande oportunidade de golpear o ponto fraco da fera. O que você faz?\n");
+
+        int escolha15 = atacarDragao();
+
+        if (escolha15 == 1) {
+            int sorte5 = rolarDado();
+            printf("Sorte: %d. ", sorte5);
+            if (sorte5 >= 15) {
+                printf("Sucesso no ataque!\n");
+            } else {
+                printf("Falha no ataque.\n");
+            }
+        } else {
+            printf("Emboscada: \n");
+        }
+
     }
 
         return 0;
@@ -249,7 +278,7 @@ int escolherCaminho() {
     int escolha;
     do {
         printf("1. Você decide confiar na furtividade e experiência do ladino para passar pelo caminho curto com armadilhas. 'Não podemos demorar muito, temos que alcançar Falin o quanto antes.\n");
-        printf("2. É muito arriscado, a masmorra tem andado instável. Se sofrermos um golpe fatal, teremos 0 chances de salvar minha irmã.\n");
+        printf("2. É muito arriscado, e a masmorra tem andado instável. Se sofrermos um golpe fatal, não teremos nenhuma chance de salvar minha irmã.\n");
         printf("-> ");
         scanf("%d", &escolha);
     }
@@ -260,7 +289,7 @@ int escolherCaminho() {
 int passarSereias() {
     int escolha;
     do {
-        printf("1. Proteja seus ouvidos com algodão e peça para Marcille usar magia para forçar as sereias a imergirem na água.\n");
+        printf("1. Faça um protetor para seus ouvidos e peça para Marcille usar magia para forçar as sereias a submergirem na água.\n");
         printf("2. Tente uma abordagem um pouco menos ortodoxa.\n");
         printf("-> ");
         scanf("%d", &escolha);
@@ -285,7 +314,7 @@ int acordarMarcille() {
     int escolha;
     do {
         printf("1. Você segue em direção a um foco de luz no meio de toda a escuridão que domina o ambiente e chama por Marcille.\n");
-        print("2. Você ouve ruídos de origem desconhecida e anda em direção a ele, chamando por Marcille.\n");
+        printf("2. Você ouve ruídos de origem desconhecida e anda em direção a ele, chamando por Marcille.\n");
         printf("-> ");
         scanf("%d", &escolha);
     }
@@ -296,8 +325,8 @@ int acordarMarcille() {
 int interpretarSonho() {
     int escolha;
     do {
-        printf("1. 'Já Sei! Ela tem medo de monstros. Deixe-mer como posso derrotar esse tipo de monstro, hum... Por que você não usa seus poderes mágicos para combatê-lo? Você consegue derrotar esse monstro.'\n");
-        print("2. 'Não... será que...?'");
+        printf("1. Ela tem medo de monstros! 'Marci, você consegue derrotá-lo com seus poderes mágicos.'\n");
+        printf("2. 'Não... pensa, Laios, pensa.\n'");
         printf("-> ");
         scanf("%d", &escolha);
     }
@@ -305,11 +334,35 @@ int interpretarSonho() {
     return escolha;
 }
 
-int interpretarSonho2() {
+int tratarComOrcs() {
     int escolha;
     do {
-        printf("1. 'Entendi! Marcille se sente mal por seu feitiço de ressureição ter transformado Falin naquilo'\n");
-        print("2. 'Não... será que...?'");
+        printf("1. Puxe a espada e os desafie para o combate. Não deixe que o parem.\n");
+        printf("2. Pergunte o que está acontecendo, pois eles parecem estar em debandada.");
+        printf("-> ");
+        scanf("%d", &escolha);
+    }
+    while (escolha != 1 && escolha !=2);
+    return escolha;
+}
+
+int capturarBarometz() {
+    int escolha;
+    do {
+        printf("1. Puxe a espada e os desafie para o combate. Não deixe que o parem.\n");
+        printf("2. Pergunte o que está acontecendo, pois eles parecem estar em debandada.");
+        printf("-> ");
+        scanf("%d", &escolha);
+    }
+    while (escolha != 1 && escolha !=2);
+    return escolha;
+}
+
+int atacar() {
+    int escolha;
+    do {
+        printf("1. Aproveite a oportunidade e avance em direção ao ponto fraco da criatura. @Sucesso >=15@\n");
+        printf("2. Siga com o combinado.\n");
         printf("-> ");
         scanf("%d", &escolha);
     }
