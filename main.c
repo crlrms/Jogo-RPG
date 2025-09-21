@@ -14,6 +14,7 @@ int passarSereias();
 int descansar();
 int acordarMarcille();
 int interpretarSonho();
+int comerPesadelos();
 int interacaoOrcs();
 int capturarBarometz();
 int atacarDragao();
@@ -95,12 +96,12 @@ int main() {
             }    
         }
     } else {
-        printf("Marcille e Senshi discutem a melhor forma de pegar mandrágoras, tubérculos que emitem um grito alto, atordoante, ao serem retiradas da terra. Marcile diz que aprendeu na escola de magia que se deve amarrar uma corda nas mandrágoras e puxá-las a uma distância segura para os ouvidos. Senshi afirma que ouviu dizer que é possível silenciar as mandrágoras ao golpear seu topo antes de desenterrá-las.\nQual técnica você decide testar primeiro?\n");
+        printf("\nMarcille e Senshi discutem a melhor forma de pegar mandrágoras, tubérculos que emitem um grito alto, atordoante, ao serem retiradas da terra. Marcile diz que aprendeu na escola de magia que se deve amarrar uma corda nas mandrágoras e puxá-las a uma distância segura para os ouvidos. Senshi afirma que ouviu dizer que é possível silenciar as mandrágoras ao golpear seu topo antes de desenterrá-las.\nQual técnica você decide testar primeiro?\n");
 
         int escolha5 = escolherMandragora();
 
         if (escolha5 == 1) {
-            printf("\nMarcille e Chilchuck amarram uma corda no topo de uma mandrágora e tomam distância para longe dela, quando de repente surge um morcego grande e puxa a corda antes do tempo. O morcego fica aturdido com o grito da mandrágora e cai no chão. Ao lado Marcille, também atordoada, parecendo um pouco fora de si. Senshi se aproxima e retira uma mandrágora sem fazer barulho, apenas cortando o topo dela fora.\nA janta: Morcego grande assado com salada de mandrágora.\n");
+            printf("Marcille e Chilchuck amarram uma corda no topo de uma mandrágora e tomam distância para longe dela, quando de repente surge um morcego grande e puxa a corda antes do tempo. O morcego fica aturdido com o grito da mandrágora e cai no chão. Ao lado Marcille, também atordoada, parecendo um pouco fora de si. Senshi se aproxima e retira uma mandrágora sem fazer barulho, apenas cortando o topo dela fora.\nA janta: Morcego grande assado com salada de mandrágora.\n");
         } else {
             printf("Senshi calmamente se abaixa e puxa uma mandrágora. Todos ficam em choque, commedo do grito assustador, mas não há barulho. Ele explica que é preciso acertar a parte responsável pelo som antes de retirar a planta da terra.\n");
         }
@@ -152,7 +153,7 @@ int main() {
                 }
             }
 
-        printf("\nDormir?\n");
+        printf("\nVocês percorreram uma distância considerável e talvez seja a hora de parar para descansar, ou será que não?\n");
 
         int escolha9 = descansar();
 
@@ -173,7 +174,7 @@ int main() {
                 if (escolha11 == 1) {
                     printf("Ela para e olha para você. De repente, o monstro agarra seu braço, mas você consegue se desvencilhar e diz que está bem, porém ao olhar para sua mão, percebe que algo aconteceu: sua pele está diferente, parece enrugada. É uma mão idosa, e agora você entende: Marcille teme a morte das pessoas que ama por ser uma elfa e ter expectativa de vida maior de que todos.\n'Você consegue derrotá-lo, você é incrível, Marcille. Olhe tudo isso! Nos meus sonhos não tem nada'. Ela parece incerta, mas se concentra.\nSe ao menos eu tivesse um livro tão poderoso dele (do mago louco)\n'Então deseje isso! Deseje com todas suas forças.'\nDe dentro do corpo do monstro, emerge algo, ela pega, e é o livro do mago louco! Antes que a criatura consiga atacar, Marcille pega o livro e desfere uma pancada na cabeça do monstro e ele morre.\nEla não usou o livro do jeito que você imaginava, mas o importante é que o pesadelo chegou ao fim.\nVocês acordam. Senshi e Chilchuck pergunta como vocês estão, contam que tiveram pesadelos, mas você não lembra de nada, e Marcille narra um sonho divertido e engraçado.\n");
                 } else {
-                    printf("Você lembra de Falin antes de ser pega pelo monstro. Ela não foi envenenada, mas parecia terrivelmente velha, era como se tivesse ficado idosa em um piscar de olhos. Então você compreende: Marcille teme a morte das pessoas que ama por ser uma elfa e ter expectativa de vida maior de que todos.\n'Você consegue derrotá-lo, você é incrível, Marcille. Olhe tudo isso! Nos meus sonhos não tem nada'. Ela parece incerta, mas se concentra.\nSe ao menos eu tivesse um livro tão poderoso dele (do mago louco)\n'Então deseje isso! Deseje com todas suas forças.'\nDe dentro do corpo do monstro, emerge algo, ela pega, e é o livro do mago louco! Antes que a criatura consiga atacar, Marcille pega o livro e desfere uma pancada na cabeça do monstro e ele morre.\nEla não usou o livro do jeito que você imaginava, mas o importante é que o pesadelo chegou ao fim.\nVocês acordam. Senshi e Chilchuck pergunta como vocês estão, contam que tiveram pesadelos, mas você não lembra de nada, e Marcille narra um sonho divertido e engraçado.\n");
+                    printf("Você lembra de Falin antes de ser pega pelo monstro. Ela não foi envenenada, mas parecia terrivelmente velha, era como se tivesse ficado idosa em um piscar de olhos. Então você compreende: Marcille teme a morte das pessoas que ama por ser uma elfa e ter expectativa de vida maior de que todos.\n'Você consegue derrotá-lo, você é incrível, Marcille. Olhe tudo isso! Nos meus sonhos não tem nada'. Ela parece incerta, mas se concentra.\nSe ao menos eu tivesse um livro de magia poderoso...\n'Então deseje isso! Deseje com todas suas forças.'\nDe dentro do corpo do monstro, emerge algo, ela pega, e é o livro do mago louco! Antes que a criatura consiga atacar, Marcille pega o livro e desfere uma pancada na cabeça do monstro e ele morre.\nEla não usou o livro do jeito que você imaginava, mas o importante é que o pesadelo chegou ao fim.\nVocês acordam. Senshi e Chilchuck pergunta como vocês estão, contam que tiveram pesadelos, mas você não lembra de nada, e Marcille narra um sonho divertido e engraçado.\n");
                 }
 
             } else {
@@ -182,11 +183,21 @@ int main() {
                 int escolha12 = interpretarSonho();
 
                 if (escolha12 == 1) {
-                    printf("Ela para e olha para você. De repente, o monstro agarra seu braço, mas você consegue se desvencilhar e diz que está bem, porém ao olhar para sua mão, percebe que algo aconteceu: sua pele está diferente, parece enrugada. É uma mão idosa, e agora você entende: Marcille teme a morte das pessoas que ama por ser uma elfa e ter expectativa de vida maior que a de todos.\n'Você consegue derrotá-lo, você é incrível, Marcille. Olhe tudo isso, esses livros! Nos meus sonhos não tem nada'. Ela parece incerta, mas se concentra.\nSe ao menos eu tivesse um livro tão poderoso dele (do mago louco)...\n'Então deseje isso! Deseje com todas suas forças.'\nDe dentro do corpo do monstro, emerge algo, ela pega, e é o livro do mago louco! Antes que a criatura consiga atacar, Marcille pega o livro e desfere uma pancada na cabeça do monstro e ele morre.\nEla não usou o livro do jeito que você imaginava, mas o importante é que o pesadelo chegou ao fim.\nVocês acordam. Senshi e Chilchuck pergunta como vocês se sentem, contam que tiveram pesadelos, mas você não lembra de nada, e Marcille narra um sonho divertido e engraçado.\n");
+                    printf("Ela para e olha para você. De repente, o monstro agarra seu braço, mas você consegue se desvencilhar e diz que está bem, porém ao olhar para sua mão, percebe que algo aconteceu: sua pele está diferente, parece enrugada. É uma mão idosa, e agora você entende: Marcille teme a morte das pessoas que ama por ser uma elfa e ter expectativa de vida maior que a de todos.\n'Você consegue derrotá-lo, você é incrível, Marcille. Olhe tudo isso, esses livros! Nos meus sonhos não tem nada'. Ela parece incerta, mas se concentra.\nSe ao menos eu tivesse um livro de magia...\n'Então deseje isso! Deseje com todas suas forças.'\nDe dentro do corpo do monstro, emerge algo, ela pega, e é o livro do mago louco! Antes que a criatura consiga atacar, Marcille pega o livro e desfere uma pancada na cabeça do monstro e ele morre.\nEla não usou o livro do jeito que você imaginava, mas o importante é que o pesadelo chegou ao fim.\nVocês acordam. Senshi e Chilchuck pergunta como vocês se sentem, contam que tiveram pesadelos, mas você não lembra de nada, e Marcille narra um sonho divertido e engraçado.\n");
                 } else {
-                    printf("Você lembra do pai de Marcille. Ela disse que ele morreu quando ela era nova. Mas o modo como o tempo passa para os elfos... e na visão era como se o pai tivesse ficado idoso em um piscar de olhos. Então você compreende: Marcille teme a morte das pessoas que ama, por ser uma elfa e ter expectativa de vida maior que a de todos.\n'Você consegue derrotá-lo, você é incrível, Marcille. Olhe tudo isso, esses livros! Nos meus sonhos não tem nada'. Ela parece incerta, mas se concentra.\nSe ao menos eu tivesse um livro tão poderoso dele (do mago louco)\n'Então deseje isso! Deseje com todas suas forças.'\nDe dentro do corpo do monstro, emerge algo, ela pega, e é o livro do mago louco! Antes que a criatura consiga atacar, Marcille pega o livro e desfere uma pancada na cabeça do monstro e ele morre.\nEla não usou o livro do jeito que você imaginava, mas o importante é que o pesadelo chegou ao fim.\nVocês acordam. Senshi e Chilchuck pergunta como vocês se sentem, contam que tiveram pesadelos, mas você não lembra de nada, e Marcille narra um sonho divertido e engraçado.\n");
+                    printf("Você lembra do pai de Marcille. Ela disse que ele morreu quando ela era nova. Mas o modo como o tempo passa para os elfos... e na visão era como se o pai tivesse ficado idoso em um piscar de olhos. Então você compreende: Marcille teme a morte das pessoas que ama, por ser uma elfa e ter expectativa de vida maior que a de todos.\n'Você consegue derrotá-lo, você é incrível, Marcille. Olhe tudo isso, esses livros! Nos meus sonhos não tem nada'. Ela parece incerta, mas se concentra.\nSe ao menos eu tivesse um livro de magia poderoso...\n'Então deseje isso! Deseje com todas suas forças.'\nDe dentro do corpo do monstro, emerge algo, ela pega, e é o livro do mago louco! Antes que a criatura consiga atacar, Marcille pega o livro e desfere uma pancada na cabeça do monstro e ele morre.\nEla não usou o livro do jeito que você imaginava, mas o importante é que o pesadelo chegou ao fim.\nVocês acordam. Senshi e Chilchuck pergunta como vocês se sentem, contam que tiveram pesadelos, mas você não lembra de nada, e Marcille narra um sonho divertido e engraçado.\n");
                 }
             }
+            printf("Chilchuck pega o travesseiro de Marcille e sacode, de dentro caem vários pesadelos. Ele o encara e pergunta se você não está pensando em comer aquilo, está...?");
+
+            int escolha20 = comerPesadelos();
+
+            if (escolha20 ==1) {
+                printf("Bem temperado e com acompanhamentos ficou uma delícia. E o melhor: ninguém morreu envenenado.\n");
+            } else {
+                printf("Bom, quem sabe em uma próxima oportunidade.\n");
+            }
+
         }
     }
 
@@ -195,22 +206,22 @@ int main() {
         int escolha13 = interacaoOrcs();
 
         if (escolha13 == 1) {
-            printf("\nSeu grupo é dominado pelos orcs. Eles pegam toda a comida de vocês. O líder deles, irritado, dispara contra você: 'Tudo o que passamos com aquele dragão, ainda temos que lidar com esses aventureiros idiotas'. À menção do dragão, você rapimente pergunta por mais detalhes e, depois de você expressar sua intenção de matar o dragão, ele lhe fala sobre os últimos locais de avistamento do dragão e libera seu grupo para seguir viagem. Sem comida, terão que caçar mais um monstro.\n");
-            printf("\nQue sorte! Vocês enxergam um barometz, uma espécie de cordeiro vegetal, uma planta em forma de cordeiro. Ele é inofensivo, não tem nenhum mecanismo de defesa, entretanto costuma ser usado como isca por monstros que ficam à espreita esperando alguém se aproximar do barometz. Hum... os outros monstros devem ter fujido, o dragão não deve estar longe.\n");
+            printf("Seu grupo é dominado pelos orcs. Eles pegam toda a comida de vocês. O líder deles, irritado, dispara contra você: 'Tudo o que passamos com aquele dragão, ainda temos que lidar com esses aventureiros idiotas'. À menção do dragão, você rapimente pergunta por mais detalhes e, depois de você expressar sua intenção de matar o dragão, ele lhe fala sobre os últimos locais de avistamento do dragão e libera seu grupo para seguir viagem. Sem comida, terão que caçar mais um monstro.\n");
+            printf("\nQue sorte! Vocês enxergam um barometz, uma espécie de cordeiro vegetal, uma planta em forma de cordeiro. Ele é inofensivo, não tem nenhum mecanismo de defesa, entretanto costuma ser usado como isca por monstros que ficam à espreita esperando alguém se aproximar do barometz. Hum... os outros monstros devem ter fugido, o dragão não deve estar longe.\n");
 
             int escolha14 = capturarBarometz();
 
             if (escolha14 == 1) {
-                printf("\nParece até bom demais para ser verdade, mas nada acontece, não há monstros esperando para emboscar e você pega tranquilamentre o barometz.  Hum... os outros monstros devem ter fugido, o dragão não deve estar longe daqui.\n");
+                printf("Parece até bom demais para ser verdade, mas nada acontece, não há monstros esperando para emboscar e você pega tranquilamentre o barometz.  Hum... os outros monstros devem ter fugido, o dragão não deve estar longe daqui.\n");
             } else {
-                printf("\nCom a magia de Marcille, vocês criam um golem para ir até o barometz, mas nada acontece. Hum... os outros monstros devem ter fugido, o dragão não deve estar longe daqui.\n");
+                printf("Com a magia de Marcille, vocês criam um golem para ir até o barometz, mas nada acontece. Hum... os outros monstros devem ter fugido, o dragão não deve estar longe daqui.\n");
             }
 
         } else {
-            printf("\nO líder deles diz que não é da sua conta, então você fala sobre o resgate de sua irmã Falin, que foi engolida pelo dragão vermelho. O orc vacila um pouco, e por fim diz que estão migrando por causa dos ataques do dragão vermelho.\nDepois de você expressar sua intenção de matar o dragão, ele lhe fala sobre os últimos locais de avistamento do dragão e entrega um pouco de comida para a viagem de vocês.\n");
+            printf("O líder deles diz que não é da sua conta, então você fala sobre o resgate de sua irmã Falin, que foi engolida pelo dragão vermelho. O orc vacila um pouco, e por fim diz que estão migrando por causa dos ataques do dragão vermelho.\nDepois de você expressar sua intenção de matar o dragão, ele lhe fala sobre os últimos locais de avistamento do dragão e entrega um pouco de comida para a viagem de vocês.\n");
         }
 
-    printf("\nSeu grupo chega ao lugar indicado e é possível ver os sinais da passagem do dragão por ali. Vocês fazem planos sobre como derrotá-lo e decidem que Chilchuck e Senshi vão atraí-lo para um lugar onde Marcille consiga imobilizá-lo e você o golpeie.\nO dragão vermelho aparece e o grupo começa a agir, porém ao se deslocar para seu lugar designado, você vê uma grande oportunidade de golpear o ponto fraco da criatura. O que você faz?\n");
+    printf("\nSeu grupo chega ao lugar indicado pelos orcs e é possível ver os sinais da passagem do dragão por ali. Vocês fazem planos sobre como derrotá-lo e decidem que Chilchuck e Senshi vão atraí-lo para um lugar onde Marcille consiga imobilizá-lo e você o golpeie.\nO dragão vermelho aparece e o grupo começa a agir, porém ao se deslocar para seu lugar designado, você vê uma grande oportunidade de golpear o ponto fraco da criatura. O que você faz?\n");
 
         int escolha15 = atacarDragao();
 
@@ -226,7 +237,7 @@ int main() {
             printf("Com o golpe que acabou de receber, você não tem escolha a não ser parar para cuidar dos seus ferimentos e preparar para um novo ataque, talvez no próximo dia. Mas ter ido pelo caminho maior e parado para dormir fez com que você perdesse muito tempo. Agora é praticamente impossível salvar Falin.\n");
             final2();
         }   else {
-            printf("Ataque falhou, mas ainda há esperança! Você atingiu o olho do dragão e ele o arremessou para longe, mas você levanta e rapidamente se prepara para uma segunda investida, aproveitando que o dragão está desnorteado por causa da visão embaçada. Cambaleante, o dragão fica lento e Marcille causa uma explosão que o deixa presa preso entre destroços. Seu próximo pass?\n");
+            printf("Ataque falhou, mas ainda há esperança! Você atingiu o olho do dragão e ele o arremessou para longe, mas você levanta e rapidamente se prepara para uma segunda investida, aproveitando que o dragão está desnorteado por causa da visão embaçada. Cambaleante, o dragão fica lento e Marcille causa uma explosão que o deixa presa preso entre os destroços. Seu próximo ataque?\n");
 
             int escolha18 = atacarDragao2();
 
@@ -241,35 +252,35 @@ int main() {
         }
     }
         }  else {
-            printf("Senshi e Chilchuck atraem o dragão para uma área mais estreita entre construções altas. Ao seu sinal, Marcille lança feitiço explosivo para derrubar as construções sobre o dragão e deixá-lo parado. Porém, os destroços não são o suficiente para prender o dragão por muito tempo.\n");
+            printf("\nSenshi e Chilchuck atraem o dragão para uma área mais estreita entre construções altas. Ao seu sinal, Marcille lança feitiço explosivo para derrubar as construções sobre o dragão e deixá-lo parado. Porém, os destroços não são o suficiente para prender o dragão por muito tempo. Como atacar?\n");
 
             int escolha19 = atacarDragao2();
 
             if (escolha19 == 1) {
-                printf("\nFuncionou, por mais improvável que pareça, você acertou exatamente o lugar almejado.\n");
+                printf("Funcionou, por mais improvável que pareça, você acertou exatamente o lugar que mirou.\n");
             } else if(escolha19 == 2) {
-                printf("\nFoi por pouco, mas você conseguiu saltar toda aquela distância por cima dos destroços para chegar até a garganta do dragão e conseguir golpeá-lo.\n");
+                printf("Foi por pouco, mas você conseguiu saltar toda aquela distância por cima dos destroços para chegar até a garganta do dragão e conseguir golpeá-lo.\n");
             } else{
                 printf("Você vai pelo lado mais distante e chega quando o dragão já está prestes a se libertar totalmente. Mas com um movimento rápido, consegue atingi-lo com um golpe mortal. No entanto, se desequilibra e não vê a última reação do monstro vindo em sua direção: Ele o atinge e decepa sua perna esquerda um pouco abaixo do joelho. Marcille pode curar você, colocar a perna de volta, mas a dor é insuportável.\n");
             }
 
         }
-    printf("\nO grande dragão vermelho finalmente é derrotado. Você, Marcille e Chilchuck procuram o corpo de Falin dentro da barriga do dragão para iniciar o ritual de ressureição. Senshi começa a separar algumas partes da carne do monstro, ele está muito animado para criar quitutes de dragão.\nPorém o corpo de Falin não está na barriga do dragão. Será que se enganaram e ela não foi engolida? Então você corta a bolsa de combustível do dragão, um orgão onde armazena matéria prima para produzir o fogo que ele exala. Lá dentro, há um esqueleto humano. É Falin!.\nMarcille fica séria e diz que nesse estado vocês tem pouco tempo para ressuscitá-la antes que seja impossível unir novamente a alma de Falin ao corpo dela. Você pergunta o que pode ser feito e ela responde que nesse caso teriam de usar carne de animais (como boi e carneiro) para refazer o corpo, mas não dá tempo de voltar à superfície, então terão que usar a carne do dragão. Você aceita ressuscitar sua irmã refazendo o corpo dela com carne de monstro?\n");
+    printf("\nO grande dragão vermelho finalmente é derrotado. Você, Marcille e Chilchuck procuram o corpo de Falin dentro da barriga do dragão para iniciar o ritual de ressureição. Senshi começa a separar algumas partes da carne do monstro, ele está muito animado para criar quitutes de dragão.\nPorém o corpo de Falin não está na barriga do dragão. Será que se enganaram e ela não foi engolida? Então você corta a bolsa de combustível do dragão, um orgão onde armazena matéria prima para produzir o fogo que ele exala. Lá dentro, há um esqueleto humano. É Falin!\nMarcille fica séria e diz que nesse estado vocês tem pouco tempo para ressuscitá-la antes que seja impossível unir novamente a alma de Falin ao corpo dela. Você pergunta o que pode ser feito e ela responde que nesse caso teriam de usar carne de animais (como boi e carneiro) para refazer o corpo, mas não dá tempo de voltar à superfície, então terão que usar a carne do dragão. Você aceita ressuscitar sua irmã refazendo o corpo dela com carne de monstro?\n");
 
     int escolha16 = ressuscitarFalin();
 
     if (escolha16 == 1) {
-        printf("\nMarcille desenha um grande círculo com várias runas antigas e no centro coloca os ossos de Falin. Ela bate o cajado no centro do círculo, começa a entoar cantigos antigos e uma aura estranha paira no ar. Você sabe: É magia negra. Se descobrirem, todos vocês poderão ser condenados à prisão perpétua ou pena de morte. Chilchuck parece contrariado e pergunta se você vai deixar que isso continue.\n");
+        printf("\nMarcille desenha um grande círculo com vários símbolos e runas e no centro coloca os ossos de Falin. Ela bate o cajado no centro do círculo, começa a entoar canticos antigos e uma aura estranha paira no ar. Você sabe: É magia negra. Se descobrirem, todos vocês poderão ser condenados à prisão perpétua ou pena de morte. Chilchuck parece contrariado e pergunta se você vai deixar que isso continue.\n");
         int escolha17 = fazerMagiaNegra();
         if (escolha17 == 1) {
-            printf("\nEla termina o ritual, já esgotada e cai sem forças. O corpo de Falin foi preenchido por carne, sangue e tudo o mais, agora ela estava inteira outra vez. Então Falin abre os olhos e olha para vocês, sem entender bem o que tinha acontecido. Marcille pula na direção ela e a abraça com toda sua força, emocionada. Você cobre Falin com sua capa e também a abraça.\n");
+            printf("Ela termina o ritual já esgotada e cai sem forças. O corpo de Falin foi preenchido por carne, sangue e tudo o mais, agora ela estava inteira outra vez. Então Falin abre os olhos e olha para vocês, sem entender o que estava acontecendo. Marcille, emocionada, pula na direção dela e a abraça com toda sua força. Você cobre Falin com uma capa e também a abraça.\n");
             final4();
         } else {
-            printf("\nVocê pede para que Marcille pare, isso não parece certo. Se descobrirem, a vida de Falin acabará do mesmo jeito e não se sabe o que o lado monstro poderá fazer a ela. Marcille");
+            printf("Você pede para que Marcille pare, isso não parece certo. Se descobrirem, a vida de Falin acabará do mesmo jeito e não se sabe o que o lado monstro poderá fazer a ela. Marcille");
             final3();
         }
     } else {
-        printf("\nÉ o fim, Falin se foi, precisamos aceitar. Você guarda os ossos de Falin e se pprepara para subir à superfície e sair da masmorra.\n");
+        printf("\nÉ o fim, Falin se foi, precisamos aceitar. Você guarda os ossos de Falin e se prepara para subir à superfície e sair da masmorra.\n");
         final3();
     }
         return 0;
@@ -358,8 +369,8 @@ int escolherCaminho() {
 int passarSereias() {
     int escolha;
     do {
-        printf("1. Faça um protetor para seus ouvidos e peça para Marcille usar magia para forçar as sereias a mergulharem na água. @Sorte requer >=10@\n");
-        printf("2. Tente uma abordagem um pouco menos ortodoxa.\n");
+        printf("1. Faça um protetor para seus ouvidos e peça para Marcille usar magia para forçar as sereias a mergulharem na água.\n");
+        printf("2. Tente uma abordagem um pouco menos ortodoxa.  @Sorte requer >=10@\n");
         printf("-> ");
         scanf("%d", &escolha);
     }
@@ -469,6 +480,18 @@ int fazerMagiaNegra() {
     do {
         printf("1. Sim, já chegamos até aqui e eu faço o que for possível para salvar minha irmã.\n");
         printf("2. Não, você tem razão... não sabemos o que isso pode causar na Falin. É muito arriscado.\n");
+        printf("-> ");
+        scanf("%d", &escolha);
+    }
+    while (escolha != 1 && escolha !=2);
+    return escolha;
+}
+
+int comerPesadelos() {
+    int escolha;
+    do {
+        printf("1. Eles se parecem com mariscos, daria uma boa sopa.\n");
+        printf("2. Nunca vi nada sobre comer pesadelos, nem Senshi experimentou isso antes. Melhor deixar pra lá.\n");
         printf("-> ");
         scanf("%d", &escolha);
     }
