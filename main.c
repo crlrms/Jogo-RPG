@@ -219,7 +219,7 @@ int main() {
         printf("Sorte: %d. ", sorte5);
     
         if (sorte5 >= 15) {
-        printf("Sucesso no ataque! A faca vai diretamente na garganta do dragão, onde há um pequeno espaço que não é revestido pelas escamas. O dragão cai, você \n");
+        printf("Sucesso no ataque! A faca vai diretamente na garganta do dragão, onde há um pequeno espaço que não é revestido pelas escamas. O dragão cai e você o golpeia mais vezes.\n");
         }  else {
         // Verifica condições anteriores
             if (escolha6 != 1 && escolha9 != 1) {  // Caminho longo E dormiu
