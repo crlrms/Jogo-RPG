@@ -188,7 +188,7 @@ int main() {
                     printf("Você lembra do pai de Marcille. Ela disse que ele morreu quando ela era nova. Mas o modo como o tempo passa para os elfos... e na visão era como se o pai tivesse ficado idoso em um piscar de olhos. Então você compreende: Marcille teme a morte das pessoas que ama, por ser uma elfa e ter expectativa de vida maior que a de todos.\n'Você consegue derrotá-lo, você é incrível, Marcille. Olhe tudo isso, esses livros! Nos meus sonhos não tem nada'. Ela parece incerta, mas se concentra.\nSe ao menos eu tivesse um livro de magia poderoso...\n'Então deseje isso! Deseje com todas suas forças.'\nDe dentro do corpo do monstro, emerge algo, ela pega, e é o livro do mago louco! Antes que a criatura consiga atacar, Marcille pega o livro e desfere uma pancada na cabeça do monstro e ele morre.\nEla não usou o livro do jeito que você imaginava, mas o importante é que o pesadelo chegou ao fim.\nVocês acordam. Senshi e Chilchuck pergunta como vocês se sentem, contam que tiveram pesadelos, mas você não lembra de nada, e Marcille narra um sonho divertido e engraçado.\n");
                 }
             }
-            printf("Chilchuck pega o travesseiro de Marcille e sacode, de dentro caem vários pesadelos. Ele o encara e pergunta se você não está pensando em comer aquilo, está...?");
+            printf("\nChilchuck pega o travesseiro de Marcille e sacode, de dentro caem vários pesadelos. Ele o encara e pergunta se você não está pensando em comer aquilo, está...?\n");
 
             int escolha20 = comerPesadelos();
 
