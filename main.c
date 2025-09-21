@@ -230,7 +230,11 @@ int main() {
         printf("Sorte: %d. ", sorte5);
     
         if (sorte5 >= 15) {
+<<<<<<< HEAD
         printf("Sucesso no ataque! A faca vai diretamente na garganta do dragão, onde há um pequeno espaço que não é revestido pelas escamas. O dragão cai, você o golpeia mais vezes.\n");
+=======
+        printf("Sucesso no ataque! A faca vai diretamente na garganta do dragão, onde há um pequeno espaço que não é revestido pelas escamas. O dragão cai e você o golpeia mais vezes.\n");
+>>>>>>> b0586eae229bc69d5219aec52da172128a365f7a
         }  else {
         // Verifica condições anteriores
             if (escolha6 != 1 && escolha9 != 1) {  // Caminho longo E dormiu
@@ -486,6 +490,7 @@ int fazerMagiaNegra() {
     while (escolha != 1 && escolha !=2);
     return escolha;
 }
+<<<<<<< HEAD
 
 int comerPesadelos() {
     int escolha;
@@ -498,3 +503,5 @@ int comerPesadelos() {
     while (escolha != 1 && escolha !=2);
     return escolha;
 }
+=======
+>>>>>>> b0586eae229bc69d5219aec52da172128a365f7a
