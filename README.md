@@ -8,3 +8,13 @@ Sistema de decisões com 4 finais diferentes
 Jogadas baseadas em dados D20
 
 Mecânica de consequências por escolhas anteriores
+
+## 🎮 Como jogar (main.c)
+### Compilador online:
+1. Copie o arquivo main.c, cole e execute (run).
+
+### IDE
+1. Salve o arquivo main.c
+2. Abra na IDE (Codeblocks, VSCode) e execute (run).
+
+## Bom jogo! 🚀
