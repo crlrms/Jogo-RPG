@@ -1,6 +1,6 @@
 # 🐉⚔️🍛 RPG - Caverna do Pratão
 ## 📖 Sobre
-Jogo de RPG baseado em texto onde você lidera um grupo de aventureiros em uma missão para resgatar Falin, capturada por um dragão vermelho. Tome decisões estratégicas e enfrente criaturas enquanto explora os andares de uma masmorra perigosa.
+Jogo de RPG inspirado no mangá Dungeon Meshi e baseado em texto onde você lidera um grupo de aventureiros em uma missão para resgatar Falin, capturada por um dragão vermelho. Tome decisões estratégicas e enfrente criaturas enquanto explora os andares de uma masmorra perigosa. Tarefa da disciplina Técnicas de Programação I.
 
 ## 🧩 Funcionalidades
 Sistema de decisões com 4 finais diferentes
